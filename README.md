@@ -1,1 +1,1 @@
-# terraform-snowflake-modules
+# Terraform Snowflake Modules
