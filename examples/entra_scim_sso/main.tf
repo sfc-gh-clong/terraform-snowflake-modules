@@ -18,7 +18,7 @@ resource "snowflake_schema" "network_security" {
 #############################################
 
 module "azure_ad_network_policies" {
-  source = "../modules/azure_ad_network_policies"
+  source = "../../modules/azure_ad_network_policies"
 
   providers = {
     snowflake.accountadmin = snowflake.accountadmin
@@ -33,7 +33,7 @@ module "azure_ad_network_policies" {
 #############################################
 
 module "snowflake_entra_scim_sso" {
-  source = "../modules/snowflake_entra_scim_sso"
+  source = "../../modules/snowflake_entra_scim_sso"
 
   providers = {
     snowflake.security_integration_role = snowflake.accountadmin
